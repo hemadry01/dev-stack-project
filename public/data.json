@@ -1,73 +1,73 @@
 [
   {
-    "Icon": "⚛️",
+    "Icon": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
     "Badge": "Popular",
     "Name": "React",
     "Description": "A JavaScript library for building fast, interactive user interfaces.",
-    "Category chip": "Frontend",
+    "Categorychip": "Frontend",
     "Difficulty": "Intermediate",
     "Rating": 4.8
   },
   {
-    "Icon": "🟢",
+    "Icon": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
     "Badge": "Popular",
     "Name": "Node.js",
     "Description": "A JavaScript runtime for building scalable server-side applications.",
-    "Category chip": "Backend",
+    "Categorychip": "Backend",
     "Difficulty": "Intermediate",
     "Rating": 4.7
   },
   {
-    "Icon": "🐍",
+    "Icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8K0IRTAptDBlg6uU9KYfA703RA5QoAJ6k2Vb7jtXY6A&s=10",
     "Badge": "Beginner Friendly",
     "Name": "Python",
     "Description": "A versatile programming language widely used for web development, automation, and data science.",
-    "Category chip": "Programming",
+    "Categorychip": "Programming",
     "Difficulty": "Beginner",
     "Rating": 4.9
   },
   {
-    "Icon": "☕",
+    "Icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt5pXh5oKQnQjz1pW79FxM09sBtvbWWi4IIXswYJ8E6A&s=10",
     "Badge": "Enterprise",
     "Name": "Java",
     "Description": "A robust, object-oriented programming language used for enterprise and backend applications.",
-    "Category chip": "Backend",
+    "Categorychip": "Backend",
     "Difficulty": "Intermediate",
     "Rating": 4.6
   },
   {
-    "Icon": "🔷",
+    "Icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ9r_hVf7P9exhRN4zUX51AwVMHU9qXznfp_RbLRuNQ&s=10",
     "Badge": "Trending",
     "Name": "TypeScript",
     "Description": "A strongly typed programming language that builds on JavaScript for safer, scalable applications.",
-    "Category chip": "Programming",
+    "Categorychip": "Programming",
     "Difficulty": "Intermediate",
     "Rating": 4.8
   },
   {
-    "Icon": "🐳",
+    "Icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFzwmCoZlk9Cu4815chB_sGDsBXR8ZuTB74hc7XLPAA&s=10",
     "Badge": "DevOps",
     "Name": "Docker",
     "Description": "A platform for packaging and running applications in portable containers.",
-    "Category chip": "DevOps",
+    "Categorychip": "DevOps",
     "Difficulty": "Intermediate",
     "Rating": 4.7
   },
   {
-    "Icon": "☁️",
+    "Icon": "https://img.icons8.com/color/1200/amazon-web-services.jpg",
     "Badge": "Cloud",
     "Name": "AWS",
     "Description": "A comprehensive cloud platform offering computing, storage, databases, and many other services.",
-    "Category chip": "Cloud",
+    "Categorychip": "Cloud",
     "Difficulty": "Advanced",
     "Rating": 4.8
   },
   {
-    "Icon": "🤖",
+    "Icon": "https://img.icons8.com/color/1200/tensorflow.jpg",
     "Badge": "Trending",
     "Name": "TensorFlow",
     "Description": "An open-source framework for developing and deploying machine learning models.",
-    "Category chip": "AI / ML",
+    "Categorychip": "AI / ML",
     "Difficulty": "Advanced",
     "Rating": 4.5
   }

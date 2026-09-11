@@ -7,7 +7,7 @@ export function HeroSection() {
           <h1 className="text-[32px] font-bold mb-4">
             Build Your Ideal <br/> <span className="text-blue-600">Development Stack</span>
           </h1>
-          <p className="w-2/4">
+          <p className="w-2/4 text-gray-400">
             Explore frontend, backend, database, and tooling options, compare
             them side by side, and put together the stack that fits your next
             project.
