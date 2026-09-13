@@ -3,8 +3,11 @@ import { Suspense } from 'react';
 import './App.css'
 import { HeroSection } from './component/HeroSection';
 import { Nav } from './component/Nav';
+
 import TecnologyDetailList from './component/Technology/TecnologyDetailList';
 import type { Itecnology } from './type/Tecnology';
+import FooteSection from './component/FooteSection';
+
 
 function App() {
   
@@ -21,6 +24,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
          <TecnologyDetailList technologyPromise={technologyPromise()} />
       </Suspense>
+      <FooteSection />
     </>
   );
 }
