@@ -14,7 +14,7 @@ export function HeroSection() {
           </p>
           <div className="flex gap-4 mt-4">
             <button className="rounded-2xl bg-red-600 py-2 px-2 text-[14px] font-bold text-white">Explore Technologies</button>
-            <button className="rounded-2xl border-[1px] border-gray-300 py-2 px-2">Learn More</button>
+            <button className="rounded-2xl border border-gray-300 py-2 px-2">Learn More</button>
           </div>
         </div>
         <div className="w-1/4">

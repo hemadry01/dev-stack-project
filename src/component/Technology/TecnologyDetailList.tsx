@@ -1,6 +1,9 @@
-import { use } from "react";
+
+import { use, useState } from "react";
 import type { Itecnology } from "../../type/Tecnology";
 import TechnologyCard from "./TechnologyCard";
+import SelectedTechnology from "./selected/SelectedTechnology";
+
 
 export interface TecnologyDetailListProps {
 
@@ -9,8 +12,10 @@ export interface TecnologyDetailListProps {
 
 export default function TecnologyDetailList({ technologyPromise }: TecnologyDetailListProps) {
 
-    const technology= use(technologyPromise);
-    console.log(technology);
+   const technology = use(technologyPromise);
+   const [selectTecnology, setSelectTecnology] = useState<Itecnology[]>([]);
+
+   console.log(technology);
     
     return (
       <div className="justify-between items-center mx-auto container mt-20">
@@ -25,22 +30,31 @@ export default function TecnologyDetailList({ technologyPromise }: TecnologyDeta
         <div className="mt-4">
           <div className="flex">
             <div className="w-3/4 grid grid-cols-3 gap-3 mr-4 ">
-              {
-                technology.map((technology:Itecnology,index:number)=>{
-                    return(
-                        <TechnologyCard
-                        key={index}
-                        technology={technology}
-                        
-                        ></TechnologyCard>
-                    )
-                })
-              }
+              {technology.map((technology: Itecnology, index: number) => {
+                return (
+                  <TechnologyCard
+                    key={index}
+                    technology={technology}
+                    selectTecnology={selectTecnology}
+                    setSelectTecnology={setSelectTecnology}
+                  ></TechnologyCard>
+                );
+              })}
             </div>
 
-            <div className="w-1/4 bg-green-300"></div>
+            <div className="w-1/4 rounded-1xl ">
+              <SelectedTechnology
+                selectTecnology={selectTecnology}
+                setSelectTecnology={setSelectTecnology}
+              ></SelectedTechnology>
+            </div>
           </div>
         </div>
       </div>
     );
 }
+
+{/* <SelectedTechnology
+  selectTecnology={selectTecnology}
+  setSelectTecnology={setSelectTecnology}
+/>; */}
