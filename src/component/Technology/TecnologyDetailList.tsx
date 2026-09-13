@@ -22,7 +22,10 @@ export default function TecnologyDetailList({ technologyPromise }: TecnologyDeta
       <div className="justify-between items-center mx-auto container mt-20">
         <div>
           <h2 className="text-[24px] font-bold">
-            Explore the <span className="text-blue-500">Technologies</span>
+            Explore the
+            <span className="bg-gradient-to-br from-[#F6D242] to-[#FF52E5] bg-clip-text text-transparent">
+              Technologies
+            </span>
           </h2>
           <p className="text-gray-400">
             Pick one technology per category to build your ideal stack.

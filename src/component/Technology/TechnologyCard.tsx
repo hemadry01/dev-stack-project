@@ -1,6 +1,7 @@
 import { MdOutlineStarOutline } from "react-icons/md";
 import type { Itecnology } from "../../type/Tecnology";
-import type { Dispatch, SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
 export type TechnologyCardProps = {
   technology: Itecnology;
@@ -17,11 +18,13 @@ export default function TechnologyCard({
   count,
   setCount
 }: TechnologyCardProps) {
+  const [isSelected, setIsSelected] = useState(false);
   const handleSelectTecnology = () => {
     setCount(count+1);
     setSelectTecnology([...selectTecnology,technology]);
+    setIsSelected(true);
+    toast(`${technology.Name} added to your stack`);
   };
-  console.log(handleSelectTecnology)
 
   return (
     <div className="card w-80 bg-base-100 shadow-sm gap-3 mb-4">
@@ -34,7 +37,7 @@ export default function TechnologyCard({
           <h2 className="text-2xl font-bold">{technology.Name}</h2>
           <p>{technology.Description}</p>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center space-x-4  mt-4">
           <p>{technology.Badge}</p>
           <p>{technology.Difficulty}</p>
           <p className="flex gap-1 items-center">
@@ -42,12 +45,13 @@ export default function TechnologyCard({
             {technology.Rating}
           </p>
         </div>
-        <div className="mt-6">
+        <div className="mt-2">
           <button
             onClick={() => handleSelectTecnology()}
-            className="btn bg-black btn-block text-white"
+            className="btn w-full"
+            disabled={isSelected}
           >
-            Add to Stack
+            {isSelected === true ? "Your Stack" : "Add to Stack"}
           </button>
         </div>
       </div>
