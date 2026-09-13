@@ -6,6 +6,7 @@ export interface SelectedTechnologyCardProps {
   technology: Itecnology;
   selectTecnology: Itecnology[];
   setSelectTecnology: Dispatch<SetStateAction<Itecnology[]>>;
+ 
 }
 
 export default function SelectedTechnologyCard({

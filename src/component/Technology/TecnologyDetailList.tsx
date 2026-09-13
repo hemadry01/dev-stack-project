@@ -14,6 +14,7 @@ export default function TecnologyDetailList({ technologyPromise }: TecnologyDeta
 
    const technology = use(technologyPromise);
    const [selectTecnology, setSelectTecnology] = useState<Itecnology[]>([]);
+  const [count, setCount] = useState(0);
 
    console.log(technology);
     
@@ -37,6 +38,8 @@ export default function TecnologyDetailList({ technologyPromise }: TecnologyDeta
                     technology={technology}
                     selectTecnology={selectTecnology}
                     setSelectTecnology={setSelectTecnology}
+                    count={count}
+                    setCount={setCount}
                   ></TechnologyCard>
                 );
               })}

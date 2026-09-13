@@ -6,17 +6,22 @@ export type TechnologyCardProps = {
   technology: Itecnology;
   selectTecnology: Itecnology[];
   setSelectTecnology: Dispatch<SetStateAction<Itecnology[]>>;
+  count: number;
+  setCount: Dispatch<SetStateAction<number>>;
 };
 
 export default function TechnologyCard({
   technology,
   selectTecnology,
   setSelectTecnology,
+  count,
+  setCount
 }: TechnologyCardProps) {
   const handleSelectTecnology = () => {
-
+    setCount(count+1);
     setSelectTecnology([...selectTecnology,technology]);
   };
+  console.log(handleSelectTecnology)
 
   return (
     <div className="card w-80 bg-base-100 shadow-sm gap-3 mb-4">
