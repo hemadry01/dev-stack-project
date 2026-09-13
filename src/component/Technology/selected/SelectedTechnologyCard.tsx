@@ -28,7 +28,7 @@ export default function SelectedTechnologyCard({
         <img src={technology.Icon} alt="" className="w-[30px] h-[30px]" />
         <div>
           <h2 className="font-semibold">{technology.Name}</h2>
-          <p>{technology.Badge}</p>
+          <p>{technology.Categorychip}</p>
         </div>
       </div>
       <span

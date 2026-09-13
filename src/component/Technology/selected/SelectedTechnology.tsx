@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { Itecnology } from "../../../type/Tecnology";
 import SelectedTechnologyCard from "./SelectedTechnologyCard";
+import { toast } from "react-toastify";
 
 export interface SelectedTechnologyProps {
   selectTecnology: Itecnology[];
@@ -13,6 +14,10 @@ export default function SelectedTechnology({
 }: SelectedTechnologyProps) {
 
   //console.log(selectTecnology,"from selected technology")
+  const removeAllTechnology=()=>{
+    setSelectTecnology([]);
+    toast("Remove all data in Your Stack");
+  }
 
 
 
@@ -24,7 +29,9 @@ export default function SelectedTechnology({
       </div>
       {selectTecnology.length === 0 ? (
         <div className="border border-gray-300 rounded-2xl p-6 mb-2 mr-3 ml-3 flex justify-between items-center mx-auto">
-          <h2 className="items-center mx-auto text-gray-300">Your stack is empty</h2>
+          <h2 className="items-center mx-auto text-gray-300">
+            Your stack is empty
+          </h2>
         </div>
       ) : (
         selectTecnology.map((technology: Itecnology, index: number) => {
@@ -38,6 +45,14 @@ export default function SelectedTechnology({
           );
         })
       )}
+      <div>
+        <button
+          className="btn btn-outline btn-secondary rounded-2xl w-full"
+          onClick={() => removeAllTechnology()}
+        >
+          Remove All
+        </button>
+      </div>
     </div>
   );
 }
